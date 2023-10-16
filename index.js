@@ -6,7 +6,6 @@ import fs from "fs";
 const program = new Command();
 
 let todosFolder = process.cwd();
-console.log(todosFolder);
 let todosFilesPath = path.join(todosFolder, "todox.json");
 program
   .name("todox")
