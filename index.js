@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import path from "path";
-import os from "os";
 import fs from "fs";
 
 const program = new Command();
 
-let todosFolder = os.homedir();
+let todosFolder = new URL(".", import.meta.url).pathname;
 let todosFilesPath = path.join(todosFolder, "todox.json");
-program.name("todox").description("Todo management tool").version("1.0.0");
+program
+  .name("todox")
+  .description("Todo in the CLI application")
+  .version("1.0.0");
 
 program
   .command("path")

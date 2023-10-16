@@ -1,7 +1,7 @@
 {
   "name": "todox",
   "version": "1.0.0",
-  "description": "Todo list management application",
+  "description": "Todo in the CLI application",
   "main": "index.js",
   "type": "module",
   "scripts": {
