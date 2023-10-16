@@ -1,16 +1,31 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import path from "path";
 import fs from "fs";
+import { findUp } from "find-up";
+import path from "path";
 
-let todosFolder = process.cwd();
-let todosFilesPath = path.join(todosFolder, "todx.json");
+let todosFilesPath;
+async function findProjectRoot() {
+  const packageJsonPath = await findUp("package.json");
+
+  if (packageJsonPath) {
+    const projectRoot = path.dirname(packageJsonPath);
+    return projectRoot;
+  } else {
+    console.error("Project root not found. No package.json file detected.");
+    return null;
+  }
+}
+
+const rootDirectory = await findProjectRoot();
+
+todosFilesPath = path.join(rootDirectory, "node_modules", "todx.json");
 
 const program = new Command();
 program
   .name("todx")
   .description("Todx is a Todos application in the CLI.")
-  .version("1.0.3");
+  .version("1.1.0");
 
 program
   .command("path")
