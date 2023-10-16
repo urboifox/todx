@@ -1,9 +1,10 @@
 {
-  "name": "todox",
+  "name": "@urboifox/todox",
   "version": "1.0.0",
   "description": "Todo in the CLI application",
   "main": "index.js",
   "type": "module",
+  "private": false,
   "scripts": {
     "dev": "nodemon index"
   },
