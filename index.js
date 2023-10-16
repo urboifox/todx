@@ -4,13 +4,13 @@ import path from "path";
 import fs from "fs";
 
 let todosFolder = process.cwd();
-let todosFilesPath = path.join(todosFolder, "todox.json");
+let todosFilesPath = path.join(todosFolder, "todx.json");
 
 const program = new Command();
 program
-  .name("todox")
-  .description("Todo in the CLI application")
-  .version("1.0.0");
+  .name("todx")
+  .description("Todx is a Todos application in the CLI.")
+  .version("1.0.2");
 
 program
   .command("path")

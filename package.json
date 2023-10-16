@@ -1,6 +1,6 @@
 {
-  "name": "@urboifox/todox",
-  "version": "1.0.0",
+  "name": "todx",
+  "version": "1.0.2",
   "description": "Todo in the CLI application",
   "main": "index.js",
   "type": "module",
