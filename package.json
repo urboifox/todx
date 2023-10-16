@@ -1,0 +1,17 @@
+{
+  "name": "todox",
+  "version": "1.0.0",
+  "description": "Todo list management application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index"
+  },
+  "bin": "./index.js",
+  "keywords": [],
+  "author": "urboiFox",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0"
+  }
+}
