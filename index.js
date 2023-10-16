@@ -3,10 +3,10 @@ import { Command } from "commander";
 import path from "path";
 import fs from "fs";
 
-const program = new Command();
-
 let todosFolder = process.cwd();
 let todosFilesPath = path.join(todosFolder, "todox.json");
+
+const program = new Command();
 program
   .name("todox")
   .description("Todo in the CLI application")
