@@ -66,7 +66,7 @@ If you encounter any issues or have ideas for improvements, feel free to open an
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENCE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/urboifox/todox/blob/master/LICENCE) file for details.
 
 ## Author
 
