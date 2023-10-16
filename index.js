@@ -10,7 +10,7 @@ const program = new Command();
 program
   .name("todx")
   .description("Todx is a Todos application in the CLI.")
-  .version("1.0.2");
+  .version("1.0.3");
 
 program
   .command("path")

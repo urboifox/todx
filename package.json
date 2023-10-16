@@ -1,6 +1,6 @@
 {
   "name": "todx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Todo in the CLI application",
   "main": "index.js",
   "type": "module",
