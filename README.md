@@ -11,7 +11,7 @@ To use Todox, follow these simple steps:
 2. **Install the package**: Install the package in your project using NPM.
 
 ```bash
-  npm i @urboifox/todox
+  npm i -g @urboifox/todox
 ```
 
 Now you can use Todox by running todox from your terminal.
