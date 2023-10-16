@@ -19,7 +19,14 @@ async function findProjectRoot() {
 
 const rootDirectory = await findProjectRoot();
 
-todosFilesPath = path.join(rootDirectory, "node_modules", "todx.json");
+if (path.existsSync(rootDirectory, "node_modules")) {
+  todosFilesPath = path.join(rootDirectory, "node_modules", "todx.json");
+} else {
+  fs.mkdir(path.join(rootDirectory, "node_modules"), (err) => {
+    if (err) throw err;
+    todosFilesPath = path.join(rootDirectory, "node_modules", "todx.json");
+  });
+}
 
 const program = new Command();
 program
